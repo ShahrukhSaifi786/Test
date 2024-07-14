@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Delegation Example</title>
+  <style>
+    .green {
+      width: 500px;
+      height: 500px;
+      background-color: green;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .blue {
+      width: 400px;
+      height: 400px;
+      background-color: blue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .red {
+      width: 250px;
+      height: 250px;
+      background-color: rgba(255, 0, 0, 0.733);
+    }
+
+    .evnt-propgation {
+      padding: 10px;
+      margin: 10px;
+      background-color: rgba(255, 0, 0, 0.457);
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      border: 1px solid black;
+    }
+
+    .card {
+      width: 150px;
+      height: 150px;
+      background-color: red;
+      font-size: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* button {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      padding: 20px;
+      background-color: gray;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 18px;
+    } */
+
+    .todo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
+    ul {
+      border: 1px solid red;
+    }
+
+    li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+  
+
+    .todo-text {
+      width: 100%;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <!-- <div class="green event-bubbling event-capturing">
+    <div class="blue">
+      <div class="red"></div>
+    </div>
+  </div> -->
+
+
+  <!--   <div class="evnt-delegation">
+    Example of Event Propgation
+  </div>
+  <div class="container">
+  </div>
+  <button class="">Add Card</button> -->
+
+
+  <!-- <ul class = "event-delgation">
+    <li class="list-item">item 1</li>
+    <li class="list-item">item 2</li>
+    <li class="list-item">item 3</li>
+    <li class="list-item">item 4</li>
+    <li class="list-item">item 5</li>
+  </ul> -->
+
+  <!-- <input type="text">
+   <button>Data Fetching</button> -->
+  <div class="todo-container">
+    <div class="todo-list">
+      <input type="text" placeholder="Add" class="">
+      <button>add</button>
+    </div>
+    <div class="todo-text">
+      <ul>
+      </ul>
+    </div>
+  </div>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
